@@ -7,7 +7,7 @@
 - name: pip install IM-client
   pip: name=IM-client
 
-- name mkdir /etc/im-cli
+- name: mkdir /etc/im-cli
   file: path=/etc/im-cli state=directory mode=0755
 
 - name: copy templates
