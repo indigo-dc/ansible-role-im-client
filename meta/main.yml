@@ -10,6 +10,5 @@ galaxy_info:
     - trusty
     - xenial
   galaxy_tags:
-  - disvis
-  - powerfit
+  - im_client
 dependencies: []

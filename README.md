@@ -27,6 +27,12 @@ Variables for the auth.dat authorization file:
 Example Playbook
 ----------------
 
+```
+---
+- hosts: localhost
+  roles:
+    - indigo-dc.im-client
+```
 
 License
 -------
