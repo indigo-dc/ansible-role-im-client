@@ -7,3 +7,12 @@
 - name: pip install IM-client
   pip: name=IM-client
 
+- name mkdir /etc/im-cli
+  file: path=/etc/im-cli state=directory mode=0755
+
+- name: copy templates
+  template: src={{ item.src }} dest={{ item.dst }} mode=644
+  with_items:
+    - { src: "im_client.cfg.j2", dst: "/etc/im-cli/im_client.cfg" }
+    - { src: "auth.dat.j2", dst: "/etc/im-cli/auth.dat" }
+
