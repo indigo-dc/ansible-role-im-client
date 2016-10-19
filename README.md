@@ -2,7 +2,6 @@ Infrastructure Manager client
 =============================
 
 The ansible role deploys the Infrastructure Manager (IM) client tool.
-Dockerfile with the IM client tool:
 
 * https://github.com/grycap/im-client
 
