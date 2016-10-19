@@ -1,0 +1,13 @@
+---
+# defaults for im_client.cfg
+xmlrpc_url: http://localhost:8899
+auth_file: auth.dat
+xmlrpc_ssl: no
+xmlrpc_ssl_ca_certs: /tmp/pki/ca-chain.pem
+
+# defaults for the auth.dat config file
+keystone_url: http://kystone:5000
+username: user
+passwd: pass
+tenant: proj
+iam_token: some_access_token

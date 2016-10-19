@@ -1,0 +1,9 @@
+---
+- name: Install necessary packages
+  apt: name={{ item }} state=latest update_cache=yes
+  with_items:
+    - python-springpython
+
+- name: pip install IM-client
+  pip: name=IM-client
+
